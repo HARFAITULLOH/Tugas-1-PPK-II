@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  color: white;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgb(6, 6, 6);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+
+section:target {
+  animation: test 1s;
+}
+
+@keyframes test {
+  0% {
+    padding-top: 8rem;
+  }
+
+  100% {
+    padding-top: 0;
+  }
+}
+
+/* HOME CSS */
+section.home {
+  height: 100vh;
+  color: black;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.home h1 {
+  color: red;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.home .content {
+  display: flex;
+  max-width: 500px;
+}
+
+section.home .content p {
+  border-right: 1px solid red;
+  transition: 0.5s;
+}
+
+section.home .content p:hover {
+  border-right: none;
+  border-bottom: 1px solid red;
+  padding-bottom: 10px;
+}
+
+/* PENDIDIKAN CSS */
+section.pendidikan {
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: 100vh;
+  padding-left: 60px;
+  justify-content: center;
+}
+
+section.pendidikan h1 {
+  color: red;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.pendidikan ul li {
+  display: flex;
+  align-items: center;
+}
+
+section.pendidikan ul li.information {
+  display: flex;
+  align-items: start;
+}
+
+section.pendidikan ul span.dotted {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+section.pendidikan ul span.line {
+  display: block;
+  height: 50px;
+  border-left: 1px solid red;
+  margin-right: 10px;
+}
+
+section.pendidikan ul span.line.last {
+  height: 0;
+}
+
+section.pendidikan ul li.information span {
+  color: green;
+  font-size: 12px;
+}
+
+/* JADWAL KULIAH CSS */
+section.jadwal {
+  height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.jadwal h1 {
+  color: red;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+}
+
+/* ACTIVITY CSS */
+section.activity {
+  height: 100vh;
+  background-color: rgb(212, 212, 212);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+section.activity h1 {
+  color: red;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.activity .content {
+  max-width: 500px;
+}
