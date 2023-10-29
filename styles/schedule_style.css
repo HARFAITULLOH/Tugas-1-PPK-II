@@ -1,0 +1,116 @@
+/* HEADER CSS */
+section#schedule header {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#schedule header a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* HEADER CSS */
+
+section#schedule {
+  position: relative;
+}
+
+section#schedule main {
+  background-color: #313866;
+  padding: 0 100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/icons/bg-3.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN CONTENT CSS */
+section#schedule main .content {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+section#schedule main .content article {
+  background-color: #974ec3;
+  padding: 25px;
+  border-radius: 30px;
+  height: 40%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#schedule main .content article:nth-child(2n) {
+  background-color: #bc81df;
+}
+
+section#schedule main .content article h5 {
+  border-bottom: 2px solid white;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+section#schedule main .content article table {
+  font-size: 16px;
+}
+
+section#schedule main .content article table tr td.time {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* MAIN CONTENT CSS */
+
+/* FOOTER CSS */
+section#schedule footer {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#schedule footer a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* FOOTER CSS */
+
+/* ANIMATION */
+section#schedule:target header {
+  animation: topToCenterA 1s;
+}
+
+section#schedule:target .title {
+  animation: leftToCenterA 1s;
+}
+
+section#schedule:target main .content article {
+  animation: smallToBig 1s;
+}
+
+section#schedule:target footer {
+  animation: bottomToCenterA 1s;
+}
+/* Last Target */
